@@ -1,0 +1,244 @@
+@charset "UTF-8";
+html{
+    columns: #CC0033;
+}
+body{
+    background-color: #CC0033;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+$dwidth_middle_size: 1280px;
+$dwidth_small_size: 588px;
+
+@mixin  biz-detail-item-box($hmargin:5px, $vmargin:10px) {
+//    content: "";
+//    display: block;
+//    clear: both;
+    background-color: #CC0033;
+    margin-top: $vmargin;
+    margin-left: $hmargin;
+    margin-right: $hmargin;
+    margin-bottom: $vmargin;
+}
+@mixin biz-detail-item-header-box($imgwidth: 100%, $hpadding: 10px, $vpadding: 10px){
+    img{
+        width: $imgwidth;
+    }
+    padding-left: $hpadding;
+    padding-right: $hpadding;
+    padding-top: $vpadding;
+}
+@mixin biz-detail-item-descrip-box($hpadding: 10px, $vpadding: 10px){
+    padding-left: $hpadding;
+    padding-right: $hpadding;
+    padding-bottom: $vpadding;
+}
+
+@media screen and (max-width: $dwidth_small_size) {
+    .content-top-box{
+        padding-bottom: 10px;
+    }
+    .content-top-header-box {
+        text-align: center;
+        border-bottom: solid 1px #ffffff;
+        img {
+            display: none;
+        }
+        font-size: 24px;
+    }
+    .content-top-descrip-box {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .biz-detail-box{
+        content: "";
+        display: block;
+        background-color: #000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .biz-detail-modeling-box{
+        @include biz-detail-item-box($hmargin: 2px, $vmargin: 5px)
+    }
+    .biz-detail-modeling-header-box{
+        @include biz-detail-item-header-box($hpadding: 2px, $vpadding: 5px)
+    }
+    .biz-detail-modeling-descrip-box{
+        @include biz-detail-item-descrip-box($hpadding: 2px, $vpadding: 5px)
+    }
+
+    .biz-detail-arch-design-box{
+        @include biz-detail-item-box($hmargin: 2px, $vmargin: 5px)
+    }
+    .biz-detail-arch-design-header-box{
+        @include biz-detail-item-header-box($hpadding: 2px, $vpadding: 5px)
+    }
+    .biz-detail-arch-design-descrip-box{
+        @include biz-detail-item-descrip-box($hpadding: 2px, $vpadding: 5px)
+    }
+    
+    .biz-detail-engineering-box{
+        @include biz-detail-item-box($hmargin: 2px, $vmargin: 5px)
+    }
+    .biz-detail-engineering-header-box{
+        @include biz-detail-item-header-box($hpadding: 2px, $vpadding: 5px)
+    }
+    .biz-detail-engineering-descrip-box{
+        @include biz-detail-item-descrip-box($hpadding: 2px, $vpadding: 5px)
+    }
+
+}
+
+@media screen and (min-width: $dwidth_small_size) and (max-width: $dwidth_middle_size) {
+    .content-top-box{
+        padding-bottom: 10px;
+    }
+    .content-top-header-box {
+        text-align: center;
+        border-bottom: solid 1px #ffffff;
+        p {
+            display: none;
+        }
+    }
+    .content-top-descrip-box {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .biz-detail-box{
+        content: "";
+        display: block;
+        background-color: #000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .biz-detail-modeling-box{
+        @include biz-detail-item-box()
+    }
+    .biz-detail-modeling-header-box{
+        @include biz-detail-item-header-box()
+    }
+    .biz-detail-modeling-descrip-box{
+        @include biz-detail-item-descrip-box()
+    }
+
+    .biz-detail-arch-design-box{
+        @include biz-detail-item-box()
+    }
+    .biz-detail-arch-design-header-box{
+        @include biz-detail-item-header-box()
+    }
+    .biz-detail-arch-design-descrip-box{
+        @include biz-detail-item-descrip-box()
+    }
+    
+    .biz-detail-engineering-box{
+        @include biz-detail-item-box()
+    }
+    .biz-detail-engineering-header-box{
+        @include biz-detail-item-header-box()
+    }
+    .biz-detail-engineering-descrip-box{
+        @include biz-detail-item-descrip-box()
+    }
+
+}
+
+@media screen and (min-width: $dwidth_middle_size) {
+    .content-top-box{
+        padding-bottom: 10px;
+    }
+    .content-top-header-box {
+        text-align: center;
+        border-bottom: solid 1px #ffffff;
+        p {
+            display: none;
+        }
+    }
+    .content-top-descrip-box {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .biz-detail-header-box {
+        text-align: center;
+    }
+    .biz-detail-box{
+        content: "";
+        display: block;
+        background-color: #000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .biz-detail-items-box::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .biz-detail-modeling-box{
+        float: left;
+        width: 32%;
+        @include biz-detail-item-box();
+    }
+    .biz-detail-modeling-header-box{
+        @include biz-detail-item-header-box();
+    }
+    .biz-detail-modeling-descrip-box{
+        @include biz-detail-item-descrip-box();
+    }
+
+    .biz-detail-arch-design-box{
+        float: left;
+        width: 32%;
+        @include biz-detail-item-box();
+    }
+    .biz-detail-arch-design-header-box{
+        @include biz-detail-item-header-box();
+    }
+    .biz-detail-arch-design-descrip-box{
+        @include biz-detail-item-descrip-box();
+    }
+    
+    .biz-detail-engineering-box{
+        float: left;
+        width: 32%;
+        @include biz-detail-item-box();
+    }
+    .biz-detail-engineering-header-box{
+        @include biz-detail-item-header-box();
+    }
+    .biz-detail-engineering-descrip-box{
+        @include biz-detail-item-descrip-box();
+    }
+
+}
+
+.info-box{
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

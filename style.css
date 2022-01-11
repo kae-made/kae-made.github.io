@@ -1,0 +1,307 @@
+html {
+  -webkit-columns: #CC0033;
+          columns: #CC0033;
+}
+
+body {
+  background-color: #CC0033;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 588px) {
+  .content-top-box {
+    padding-bottom: 10px;
+  }
+  .content-top-header-box {
+    text-align: center;
+    border-bottom: solid 1px #ffffff;
+    font-size: 24px;
+  }
+  .content-top-header-box img {
+    display: none;
+  }
+  .content-top-descrip-box {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .biz-detail-box {
+    content: "";
+    display: block;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .biz-detail-modeling-box {
+    background-color: #CC0033;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+  }
+  .biz-detail-modeling-header-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+  }
+  .biz-detail-modeling-header-box img {
+    width: 100%;
+  }
+  .biz-detail-modeling-descrip-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+  }
+  .biz-detail-arch-design-box {
+    background-color: #CC0033;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+  }
+  .biz-detail-arch-design-header-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+  }
+  .biz-detail-arch-design-header-box img {
+    width: 100%;
+  }
+  .biz-detail-arch-design-descrip-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+  }
+  .biz-detail-engineering-box {
+    background-color: #CC0033;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+  }
+  .biz-detail-engineering-header-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+  }
+  .biz-detail-engineering-header-box img {
+    width: 100%;
+  }
+  .biz-detail-engineering-descrip-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 588px) and (max-width: 1280px) {
+  .content-top-box {
+    padding-bottom: 10px;
+  }
+  .content-top-header-box {
+    text-align: center;
+    border-bottom: solid 1px #ffffff;
+  }
+  .content-top-header-box p {
+    display: none;
+  }
+  .content-top-descrip-box {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .biz-detail-box {
+    content: "";
+    display: block;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .biz-detail-modeling-box {
+    background-color: #CC0033;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .biz-detail-modeling-header-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .biz-detail-modeling-header-box img {
+    width: 100%;
+  }
+  .biz-detail-modeling-descrip-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .biz-detail-arch-design-box {
+    background-color: #CC0033;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .biz-detail-arch-design-header-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .biz-detail-arch-design-header-box img {
+    width: 100%;
+  }
+  .biz-detail-arch-design-descrip-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .biz-detail-engineering-box {
+    background-color: #CC0033;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .biz-detail-engineering-header-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .biz-detail-engineering-header-box img {
+    width: 100%;
+  }
+  .biz-detail-engineering-descrip-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content-top-box {
+    padding-bottom: 10px;
+  }
+  .content-top-header-box {
+    text-align: center;
+    border-bottom: solid 1px #ffffff;
+  }
+  .content-top-header-box p {
+    display: none;
+  }
+  .content-top-descrip-box {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .biz-detail-header-box {
+    text-align: center;
+  }
+  .biz-detail-box {
+    content: "";
+    display: block;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .biz-detail-items-box::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .biz-detail-modeling-box {
+    float: left;
+    width: 32%;
+    background-color: #CC0033;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .biz-detail-modeling-header-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .biz-detail-modeling-header-box img {
+    width: 100%;
+  }
+  .biz-detail-modeling-descrip-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .biz-detail-arch-design-box {
+    float: left;
+    width: 32%;
+    background-color: #CC0033;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .biz-detail-arch-design-header-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .biz-detail-arch-design-header-box img {
+    width: 100%;
+  }
+  .biz-detail-arch-design-descrip-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .biz-detail-engineering-box {
+    float: left;
+    width: 32%;
+    background-color: #CC0033;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .biz-detail-engineering-header-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .biz-detail-engineering-header-box img {
+    width: 100%;
+  }
+  .biz-detail-engineering-descrip-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.info-box {
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
