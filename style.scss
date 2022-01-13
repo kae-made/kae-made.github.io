@@ -1,9 +1,12 @@
 @charset "UTF-8";
+$kae-image-background-color: #CC0033;
+$detail-box-background-color: #000;
+
 html{
-    columns: #CC0033;
+    columns: $kae-image-background-color;
 }
 body{
-    background-color: #CC0033;
+    background-color: $kae-image-background-color;
     color: #ffffff;
     font-size: 12px;
 }
@@ -15,7 +18,7 @@ $dwidth_small_size: 588px;
 //    content: "";
 //    display: block;
 //    clear: both;
-    background-color: #CC0033;
+    background-color: $kae-image-background-color;
     margin-top: $vmargin;
     margin-left: $hmargin;
     margin-right: $hmargin;
@@ -36,7 +39,11 @@ $dwidth_small_size: 588px;
 }
 
 @media screen and (max-width: $dwidth_small_size) {
-    .content-top-box{
+    $vpadding-small: 5px;
+    $hpadding-small: 5px;
+    $vmargin-small: 5px;
+    $hmargin-small: 2px;
+     .content-top-box{
         padding-bottom: 10px;
     }
     .content-top-header-box {
@@ -48,8 +55,8 @@ $dwidth_small_size: 588px;
         font-size: 24px;
     }
     .content-top-descrip-box {
-        padding-top: 10px;
-        padding-left: 10px;
+        padding-top: $vpadding-small;
+        padding-left: $hpadding-small;
         font-size: 16px;
         font-weight: bold;
     }
@@ -57,47 +64,50 @@ $dwidth_small_size: 588px;
     .biz-detail-box{
         content: "";
         display: block;
-        background-color: #000;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
+        background-color: $detail-box-background-color;
+        padding-top: $vpadding-small;
+        padding-bottom: $vpadding-small;
+        padding-left: $hpadding-small;
+        padding-right: $hpadding-small;
+        margin-left: $vmargin-small;
+        margin-right: $vmargin-small;
     }
     .biz-detail-modeling-box{
-        @include biz-detail-item-box($hmargin: 2px, $vmargin: 5px)
+        @include biz-detail-item-box($hmargin: $hmargin-small, $vmargin: $vmargin-small)
     }
     .biz-detail-modeling-header-box{
-        @include biz-detail-item-header-box($hpadding: 2px, $vpadding: 5px)
+        @include biz-detail-item-header-box($hpadding: $hpadding-small, $vpadding: $vpadding-small)
     }
     .biz-detail-modeling-descrip-box{
-        @include biz-detail-item-descrip-box($hpadding: 2px, $vpadding: 5px)
+        @include biz-detail-item-descrip-box($hpadding: $hpadding-small, $vpadding: $vpadding-small)
     }
 
     .biz-detail-arch-design-box{
-        @include biz-detail-item-box($hmargin: 2px, $vmargin: 5px)
+        @include biz-detail-item-box($hmargin: $hmargin-small, $vmargin: $vmargin-small)
     }
     .biz-detail-arch-design-header-box{
-        @include biz-detail-item-header-box($hpadding: 2px, $vpadding: 5px)
+        @include biz-detail-item-header-box($hpadding: $hpadding-small, $vpadding: $vpadding-small)
     }
     .biz-detail-arch-design-descrip-box{
-        @include biz-detail-item-descrip-box($hpadding: 2px, $vpadding: 5px)
+        @include biz-detail-item-descrip-box($hpadding: $hpadding-small, $vpadding: $vpadding-small)
     }
     
     .biz-detail-engineering-box{
-        @include biz-detail-item-box($hmargin: 2px, $vmargin: 5px)
+        @include biz-detail-item-box($hmargin: $hmargin-small, $vmargin: $vmargin-small)
     }
     .biz-detail-engineering-header-box{
-        @include biz-detail-item-header-box($hpadding: 2px, $vpadding: 5px)
+        @include biz-detail-item-header-box($hpadding: $hpadding-small, $vpadding: $vpadding-small)
     }
     .biz-detail-engineering-descrip-box{
-        @include biz-detail-item-descrip-box($hpadding: 2px, $vpadding: 5px)
+        @include biz-detail-item-descrip-box($hpadding: $hpadding-small, $vpadding: $vpadding-small)
     }
 
 }
 
 @media screen and (min-width: $dwidth_small_size) and (max-width: $dwidth_middle_size) {
+    $vpadding-middle: 10px;
+    $hpadding-middle: 10px;
+    $hmargin-middle: 5px;
     .content-top-box{
         padding-bottom: 10px;
     }
@@ -109,8 +119,8 @@ $dwidth_small_size: 588px;
         }
     }
     .content-top-descrip-box {
-        padding-top: 10px;
-        padding-left: 10px;
+        padding-top: $vpadding-middle;
+        padding-left: $hpadding-middle;
         font-size: 16px;
         font-weight: bold;
     }
@@ -118,13 +128,13 @@ $dwidth_small_size: 588px;
     .biz-detail-box{
         content: "";
         display: block;
-        background-color: #000;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
+        background-color: $detail-box-background-color;
+        padding-top: $vpadding-middle;
+        padding-bottom: $vpadding-middle;
+        padding-left: $hpadding-middle;
+        padding-right: $hpadding-middle;
+        margin-left: $hmargin-middle;
+        margin-right: $hmargin-middle;
     }
     .biz-detail-modeling-box{
         @include biz-detail-item-box()
@@ -155,10 +165,12 @@ $dwidth_small_size: 588px;
     .biz-detail-engineering-descrip-box{
         @include biz-detail-item-descrip-box()
     }
-
 }
 
 @media screen and (min-width: $dwidth_middle_size) {
+    $vpadding-large: 10px;
+    $hpadding-large: 5px;
+    $hmargin-large: 5px;
     .content-top-box{
         padding-bottom: 10px;
     }
@@ -170,8 +182,8 @@ $dwidth_small_size: 588px;
         }
     }
     .content-top-descrip-box {
-        padding-top: 10px;
-        padding-left: 10px;
+        padding-top: $vpadding-large;
+        padding-left: $hpadding-large;
         font-size: 16px;
         font-weight: bold;
     }
@@ -181,13 +193,13 @@ $dwidth_small_size: 588px;
     .biz-detail-box{
         content: "";
         display: block;
-        background-color: #000;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
+        background-color: $detail-box-background-color;
+        padding-top: $vpadding-large;
+        padding-bottom: $vpadding-large;
+        padding-left: $hpadding-large;
+        padding-right: $hpadding-large;
+        margin-left: $hmargin-large;
+        margin-right: $hmargin-large;
     }
     .biz-detail-items-box::after {
         content: "";
@@ -196,7 +208,7 @@ $dwidth_small_size: 588px;
     }
     .biz-detail-modeling-box{
         float: left;
-        width: 32%;
+        width: 33%;
         @include biz-detail-item-box();
     }
     .biz-detail-modeling-header-box{
