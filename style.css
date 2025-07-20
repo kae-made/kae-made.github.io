@@ -98,6 +98,18 @@ body {
     padding-right: 5px;
     padding-bottom: 5px;
   }
+  .popup {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+    z-index: 50;
+  }
+  .popup a {
+    color: #00ffff;
+    text-decoration: underline;
+  }
 }
 
 @media screen and (min-width: 588px) and (max-width: 1280px) {
@@ -187,6 +199,18 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+  }
+  .popup {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    display: none;
+    z-index: 70;
+  }
+  .popup a {
+    color: #00ffff;
+    text-decoration: underline;
   }
 }
 
@@ -291,6 +315,21 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+  }
+  .popup {
+    /* position: absolute;
+    top: 110px;
+    left: 0; */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    z-index: 100;
+  }
+  .popup a {
+    color: #00ffff;
+    text-decoration: underline;
   }
 }
 

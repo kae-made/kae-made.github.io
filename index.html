@@ -25,10 +25,39 @@
         </div>
         <div class="biz-detail-items-box">
             <div class="biz-detail-modeling-box">
-                <div class="biz-detail-modeling-header-box">
-                    <a href="https://note.com/kae_made/n/n234929b8cad6">
+                <div class="biz-detail-modeling-header-box" id="modeling-box">
+                    <a href="https://note.com/kae_made/m/m054c9f9f8b61">
                         <img src="./images/homepage-modeling.svg" alt="Modeling"/>
                     </a>
+                    <div class="popup">
+                        <ul>
+                            <li>概念モデリングの基礎 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/m/m054c9f9f8b61" target="_blank">Art of Conceptual Modeling</a></li>
+                                </ul>
+                            </li>
+                            <li>概念モデリング実践のお供 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/m/m737f9295692f" target="_blank">概念モデリングチュートリアル集</a></li>
+                                </ul>
+                            </li>
+                            <li>概念モデリングを動くコードに変換する方法論 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/m/md806463fb58a" target="_blank">Techunique of Transformation</a></li>
+                                </ul>
+                            </li>
+                            <li>概念モデリング関連コンテンツまとめページ 👉
+                                <ul>
+                                    <li><a href="https://github.com/kae-made/conceptual-modeling-articles#%E6%A6%82%E5%BF%B5%E3%83%A2%E3%83%87%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%92%E7%BF%92%E5%BE%97%E3%81%97%E3%82%88%E3%81%86" target="_blank">公開コンテンツの概要リスト</a></li>
+                                </ul>
+                            </li>
+                            <li>概念モデリングの哲学的・数学的バックグラウンド 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/m/m12bb08458a18" target="_blank"">SaG of Modeling for Real World</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="biz-detail-modeling-descrip-box">
                     <p class="content-text">ITシステムの開発で重要な概念モデリング技法の学習コンテンツを提供します。<br/>
@@ -37,10 +66,29 @@
                 </div>
             </div>
             <div class="biz-detail-arch-design-box">
-                <div class="biz-detail-arch-design-header-box">
+                <div class="biz-detail-arch-design-header-box" id="design-box">
                     <a href="https://note.com/kae_made/n/n16beec245879">
                         <img src="./images/homepage-arch-design.svg" alt="Architecture Design"/>
                     </a>
+                    <div class="popup">
+                        <ul>
+                            <li>アーキテクチャ・設計の基礎 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/n/n16beec245879" target="_blank">Essence of Software Design</a></li>
+                                </ul>
+                            </li>
+                            <li>合理的な設計・実装に関する実践的な方法論 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/m/md806463fb58a" target="_blank">Techunique of Transformation</a></li>
+                                </ul>
+                            </li>
+                            <li>IoT・Digital Twins の設計・実装を極める 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/m/m5f5f32fee80b" target="_blank">定期購読マガジン - IoT・Twins を極めよう！</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="biz-detail-arch-design-descrip-box">
                     <p class="content-text">Microsoft の IoT 技術による IoT ソリューションのアーキテクチャ設計、組込み機器・サービスの実装を支援します。<br/>
@@ -49,10 +97,19 @@
                 </div>
             </div>
             <div class="biz-detail-engineering-box">
-                <div class="biz-detail-engineering-header-box">
+                <div class="biz-detail-engineering-header-box" id="engineering-box">
                     <a href="https://note.com/kae_made/n/n624e6da0f930"> 
                         <img src="./images/homepage-engineering.svg" alt="Engineering"/>
                     </a>
+                    <div class="popup">
+                        <ul>
+                            <li>ソフトウェアエンジニアリングの実践を可能にするプラクティス集 👉
+                                <ul>
+                                    <li><a href="https://note.com/kae_made/n/n624e6da0f930" target="_blank">Practices of Software Engineering</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="biz-detail-engineering-descrip-box">
                     <p class="content-text">モデル駆動型開発や、ソフトウェアの各種自動生成技法の導入を支援します。<br/>
@@ -68,7 +125,35 @@
         <p>Twitter : <a href="https://twitter.com/embedded_george">@embedded_george</a></p>
         <p>Github : <a href="https://github.com/kae-made">github.com/kae-made</a></p>
         <p>Note : <a href="https://note.com/kae_made">note.com/kae_made</a></p>
+        <p>Facebook : <a href="https://www.facebook.com/knowledge.and.experience.made">Knowledge & Experience Facebook page</a></p>
         <p>Copyright &copy; Knowledge &amp; Experience</p>
     </div>
+
+    <script>
+        function setupHover(targetId) {
+            const target = document.getElementById(targetId) ;
+            const popup = target.querySelector(".popup") ;
+            let hideTimer = null;
+
+            target.addEventListener('mouseenter', (event) => {
+                clearTimeout(hideTimer) ;
+                popup.style.display = 'block' ;
+                // popup.style.left = event.pageX + 'px';
+                // popup.style.top = event.pageY + 'px';
+                popup.style.left = rect.left + 'px';
+                popup.style.top = (rect.bottom + window.scrollY) + 'px';
+            })
+
+            target.addEventListener('mouseleave', () => {
+                hideTimer = setTimeout(() => {
+                    popup.style.display = 'none' ;
+                }, 300) ;
+            })
+        }
+
+        setupHover("modeling-box") ;
+        setupHover("design-box") ;
+        setupHover("engineering-box") ;
+    </script>
 </body>
 </html>
